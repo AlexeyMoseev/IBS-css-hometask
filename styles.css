@@ -18,9 +18,14 @@ p {
 	text-align: center;
 }
 
-.search-field:focus-within {
-	border-bottom: 2px solid #e97f03;
+.search-field {
+	border-bottom: 2px solid transparent;
+	transition: border-color 100ms ease-out;
 }
+
+.search-field:focus-within {
+	border-color: #e97f03;
+  }
 
 .search-field:focus-within .submit-button path {
 	fill: #e97f03;
@@ -101,7 +106,7 @@ p {
 	flex-direction: column;
 	height: 272px;
 	flex: 0 0 220px;
-	margin: 0px 8px 16px 8px;
+	margin: 0px 8px 16px;
 }
 
 .item:hover {
@@ -135,8 +140,6 @@ p {
 }
 
 .image {
-	width: 59px;
-	height: 79px;
 	margin-bottom: 38px;
 }
 
@@ -269,10 +272,12 @@ p {
 	border-radius: 10px;
 	transition: 0.2s;
 	border: none;
+	box-shadow: -1px -1px #e99330 inset;
 }
 
 .add-to-cart:hover {
-	background: #e95f03;
+	background: #e99330;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .add-to-cart:active {
