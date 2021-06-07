@@ -34,6 +34,7 @@ ajax('GET', urlList, function (data) {
 			//Заполнение товаров
 			const item = document.getElementsByClassName('item')[i]
 			item.id = data.content[i].id
+			item.name = data.content[i].name
 			const title = document.getElementsByClassName('title')[i]
 			title.innerHTML = data.content[i].name
 			const currency = document.getElementsByClassName('currency')[i]
