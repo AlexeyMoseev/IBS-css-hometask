@@ -7,6 +7,11 @@ p {
 	font-family: 'Roboto', serif;
 }
 
+a {
+	text-decoration:none;
+	color: #000;
+  }
+
 .header {
 	display: flex;
 	margin: 16px 24px 24px 24px;
@@ -206,7 +211,7 @@ p {
 	color: #e97f03;
 }
 
-.wrapper-counet-add-to-cart {
+.wrapper-count-add-to-cart {
 	display: flex;
 	align-items: center;
 }
@@ -358,7 +363,7 @@ p {
 		display: block;
 	}
 
-	.wrapper-counet-add-to-cart {
+	.wrapper-count-add-to-cart {
 		margin-top: 16px;
 		margin-bottom: 24px;
 	}
