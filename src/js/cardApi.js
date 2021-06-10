@@ -1,16 +1,7 @@
+import ajax from './ajax'
+
 const urlCard = 'http://localhost:3006/item/:itemid'
 const id = '571fc60d-ea2c-469e-a5b6-c229d31f195d' //id нажатой карточки - будем получать динамически при полной реализации
-
-function ajax(method, url, callback) {
-	var xhr = new XMLHttpRequest()
-	xhr.open(method, url)
-	xhr.onreadystatechange = function () {
-		if (this.readyState == 4) {
-			if (this.status == 200) callback(JSON.parse(this.responseText))
-		}
-	}
-	xhr.send(null)
-}
 
 ajax('GET', 'http://localhost:3006/item/' + id, function (data) {
 	try {
