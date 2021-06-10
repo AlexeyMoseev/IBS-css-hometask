@@ -9,15 +9,14 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 			rel="stylesheet"
 		/>
-		<script defer src="js/listApi.js"></script>
-		<script defer src="js/search.js"></script>
-		<link rel="stylesheet" href="styles.css" />
+		<script defer src="dist/main.js"></script>
+		<link rel="stylesheet" href="dist/main.css" />
 		<title>Catalog</title>
 	</head>
 	<body>
 		<header class="header">
 			<form class="search-field">
-				<button class="search-button">
+				<button disabled class="search-button">
 					<svg
 						class="submit-button"
 						width="24"
@@ -32,7 +31,7 @@
 						/>
 					</svg>
 				</button>
-				<input id="1" class="search-input" placeholder="Search products" />
+				<input class="search-input" placeholder="Search products" />
 			</form>
 			<div class="account-buttons">
 				<button class="shopping-cart">
